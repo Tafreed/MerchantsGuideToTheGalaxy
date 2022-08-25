@@ -15,7 +15,7 @@ namespace MerchantGuideToTheGalaxy
         {
             foreach(var line in input)
             {
-                if ((line[line.Length-1]=='I' || line[line.Length - 1] == 'V' || line[line.Length - 1] == 'X' || line[line.Length - 1] == 'L' || line[line.Length - 1] == 'C' || line[line.Length - 1] == 'D' || line[line.Length - 1] == 'M') && (!line.Contains("how") && !line.Contains("Credits")))
+                if (line.Split(' ').Count() == 3 )
                 {
                     GParseAssignNumbers(line);
                 }
