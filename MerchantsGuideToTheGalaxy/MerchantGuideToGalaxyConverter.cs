@@ -11,7 +11,7 @@ namespace MerchantGuideToTheGalaxy
         private Dictionary<string, string> _galacticNumbers = new Dictionary<string, string>();
         private Dictionary<string, float> _metal = new Dictionary<string, float>();
         private IGalacticNumberSystemConverter Converter = new RomanToDecimalConverter();
-        public void MerchantGuideToGalaxyParse(string[] input)
+        public void MerchantGuideToGalaxyConvert(string[] input)
         {
             foreach(var line in input)
             {
