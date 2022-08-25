@@ -15,7 +15,7 @@ namespace MerchantGuideToTheGalaxy
         {
             foreach(var line in input)
             {
-                if (line.Split(' ').Count() == 3 )
+                if (line.Split(' ').Count() == 3 && line.Contains("is"))
                 {
                     GParseAssignNumbers(line);
                 }
